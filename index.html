@@ -1,0 +1,166 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+	<title>LAPRAS | Pandemic Simulations</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	
+	
+	
+	
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h2>LAPRAS - Learning and Predicting from Pandemic Simulations<h2>
+			<p>We are the Learning and Predicting from Pandemic Simulations team, or LAPRAS. Our team consists of six highly motivated physics students with a passion for solving complex problems and developing innovative solutions.</p>
+		</div>
+	<div class="panel panel-success">
+	<div class="panel-heading">The need for an accessible pandemic simulation model</div>
+	<div class="panel-body">
+	<p>The COVID-19 pandemic has had a profound effect on people all over the world, with drastic changes to their living conditions and lifestyles. To tackle the many challenges which have arisen, great efforts have been made to find effective solutions which encompass the key principles of humanity as well as the heights of technological developments. Information, and the way it is handled and distributed, has played and will continue to play a key role within these solutions: now more than ever, there is a strong need for clear ideas, facts and reliable data, all of which need to be made accessible to the general public.</p>
+	<br>
+	<p>We realised that while the models which are used to study the spread of the pandemic are often mentioned in news articles or statements from government entities, their features are rarely discussed in detail, perhaps to avoid confusing members of the general public. However, as these models have strongly influenced the policies adopted by governments around the world, it is evident that the information they hold is of vital importance. Therefore, we decided to create a platform which would help the users to visualise models for the spread of a pandemic.</p>
+	</div></div>
+	<div class="panel panel-info">
+	<div class="panel-heading">Pandemic Simulation Demo</div>
+	<div class="panel-body">
+	<div align="center" class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="Demo.mp4"></iframe>
+	</div>
+	
+	
+	
+	</div></div>
+	<div class="panel panel-primary">
+	<div class="panel-heading">Explanation of simulation model and parameters</div>
+	<div class="panel-body">
+	<h3>What does the simulation show?</h3>
+	<ul>
+		<li>Daily movements of the modelled population as they travel to school, work, and other locations.</li>
+		<li>The effect of lockdown measures such as working from home, closing non-essential businesses, and suspending schools, on the growth of a pandemic.</li>
+	</ul>
+	<h3>Notable features:</h3>
+	<ul>
+		<li>Can take user inputs to modify population demographics, and the mitigation strategy to implement within the model.</li>
+		<li>Modular design to ‘future-proof’ the simulation, making it easier to implement new models and variables.</li>
+		<li>Clear, understandable interface, with explanations of the implemented models and assumptions, and of the results of the strategies, in order to make the information as accessible to the general public as possible.</li>
+	</ul>
+	<p>The spread of the pandemic is treated with a simple probabilistic model which relies upon two key factors: the predisposition of an individual to the infection, affected by their vulnerability and compliance to social policies, and the density of infected people within a given location. This model will be corrected and enhanced as the project progresses.</p>
+	<p>The current version of the application is a prototype, and will be improved further in the future. We aim to make the final version accessible directly through this website for ease of use. The selected parameters button below shows some of the parameters the user will be able to set for the simulation. The current version of the prototype can be found at <a href="https://github.com/GiovanniDAddario/LAPRAS" target="_top">https://github.com/GiovanniDAddario/LAPRAS</a>.</p> 
+	  <a class="btn btn-default" data-toggle="collapse" href="#collapse_initial" role="button" aria-expanded="false" aria-controls="collapse_initial">
+		Selected Parameters
+	  </a>
+	  <a class="btn btn-info" data-toggle="collapse" href="#collapse_people_description" role="button" aria-expanded="false" aria-controls="collapse_people_description">
+		People types
+	  </a>
+	</p>
+	<div class="collapse" id="collapse_initial">
+	    <div class="card card-body">
+	        <div class="row">
+				<div class="form-group col-xs-3">
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-default">Number of households</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+				</div>
+				<div class="form-group col-xs-3">
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-default">Number of buildings</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+				</div>
+				<div class="form-group col-xs-3">
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-default">Initial infected households</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+				</div>					
+				<div class="form-group col-xs-3">
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-default">Ratio of workers to key workers</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="card card-body">
+	        <div class="row">
+				<div class="form-group col-xs-3">
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-default">Number of Schools</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+				</div>
+				<div class="form-group col-xs-3">
+					<div class="form-group">
+					  <label for="sel1">Select Strategy:</label>
+					  <select class="form-control" id="sel1">
+						<option>Unimpeded</option>
+						<option>Work from home</option>
+						<option>Full Lockdown</option>
+					  </select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="collapse" id="collapse_people_description">
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">Worker - Work between 9am-5pm, Can work from home. Work at a standard workplace. After 9-5 can visit random locations, although will tend to be in their house. </li>
+		  <li class="list-group-item">Key Worker - In school between 8-3, In lockdown would study from home. After 8-3 can visit random locations, although will tend to be in their house. </li>
+		  <li class="list-group-item">Child -  Irregular working hours, will always work 8 hours shifts between random times (to account for hospitals and other key buildings), outside of work similarly to the other people types will likely be in their house. </li>
+		</ul>
+	</div>
+	</div></div>
+	<div class="panel panel-info">
+	<div class="panel-heading">Future plans</div>
+	<br>
+	<ul>
+		<li>Average Vulnerability of individuals dependent on stats</li>
+		<li>Ability to access the simulation directly from the website.</li> 
+		<li>More robust probabilistic infection modelling.</li>
+		<li>Introducing more flexible lockdowns, allowing for closures of specific buildings etc.</li> 
+		<li>Graphical improvements and user interface updates.</li>
+		<li>Machine learning with real life data to constrain parameters more accurately.</li>
+		<li>Making the model more general so it could be applied to other situations in the future.</li>
+		<li>Adding public transport components to increase the accuracy of the model.</li>
+		<li>Introducing an educational component of the website to increase public knowledge of national emergency risks and response strategies.</li>
+	
+	</ul>
+	<div class="panel-body"></div></div>
+	<div class="panel panel-warning">
+	<div class="panel-heading">Contacts</div><br>
+	<div class="panel-body"><h3> Email: <a href="mailto:lapras.contact@gmail.com" target="_top">lapras.contact@gmail.com</a></h3></div></div>
+	</div>
+	
+	</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
